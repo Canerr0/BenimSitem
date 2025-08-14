@@ -21,7 +21,7 @@
       50% { background-position: 100% 50%; }
       100% { background-position: 0% 50%; }
     }
-    .animated-gradient { background: linear-gradient(270deg, #34d399, #3b82f6, #8b5cf6, #facc15); background-size: 600% 600%; animation: gradientBG 15s ease infinite; }
+    .animated-gradient { background: linear-gradient(270deg, #34d399, #3b82f6, #8b5cf6, #facc15); background-size: 600% 600%; animation: gradientBG 20s ease infinite; }
 
     /* Icon animasyonu */
     .icon-bounce { animation: bounce 2s infinite; }
@@ -37,16 +37,17 @@
         <a href="#features" class="text-gray-700 hover:text-green-600 transition">Özellikler</a>
         <a href="#visual" class="text-gray-700 hover:text-green-600 transition">Görseller</a>
         <a href="#cta" class="text-gray-700 hover:text-green-600 transition">Başla</a>
+        <a href="#contact" class="text-gray-700 hover:text-green-600 transition">İletişim</a>
       </div>
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <header class="animated-gradient text-white py-36 relative overflow-hidden">
+  <header class="animated-gradient text-white py-36 pt-24 relative overflow-hidden">
     <div class="text-center max-w-2xl mx-auto">
       <h1 class="text-6xl font-bold mb-4 animate-bounce">Hoşgeldin Web Siteme!</h1>
       <p class="text-xl mb-6 animate-pulse">Tailwind CSS + Font Awesome ile profesyonel, dinamik ve görsel olarak zengin landing page</p>
-      <a href="#features" class="bg-white text-blue-500 font-bold py-4 px-8 rounded shadow-lg hover:bg-gray-100 transition duration-300 transform hover:scale-110 inline-block">Başlayalım</a>
+      <a href="#features" class="bg-white text-blue-500 font-bold py-4 px-8 rounded shadow-lg hover:bg-gray-100 transition duration-300 transform hover:scale-110 inline-block">Başlayalım <i class="fas fa-arrow-right ml-2"></i></a>
     </div>
   </header>
 
@@ -77,7 +78,7 @@
       <div class="max-w-4xl mx-auto text-center text-white">
         <h2 class="text-4xl font-bold mb-6">Görselliğe Önem Veriyoruz</h2>
         <p class="text-lg mb-10">Web siteniz hızlı ve estetik olmalı, kullanıcı deneyimi önceliğimiz.</p>
-        <a href="#cta" class="bg-green-500 hover:bg-green-700 text-white font-bold py-3 px-6 rounded shadow-lg transition duration-300 transform hover:scale-110">Detayları Gör</a>
+        <a href="#cta" class="bg-green-500 hover:bg-green-700 text-white font-bold py-3 px-6 rounded shadow-lg transition duration-300 transform hover:scale-110">Detayları Gör <i class="fas fa-arrow-down ml-2"></i></a>
       </div>
     </div>
   </section>
@@ -86,12 +87,29 @@
   <section id="cta" class="py-24 text-center fade-in">
     <h2 class="text-4xl font-bold mb-6">Hemen Başla!</h2>
     <p class="text-gray-700 mb-8">Kendi web siteni oluşturmak için adım at ve bu tasarımı kullan.</p>
-    <a href="#contact" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded shadow-lg transition duration-300 transform hover:scale-110">Şimdi Başla</a>
+    <a href="#contact" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded shadow-lg transition duration-300 transform hover:scale-110">Şimdi Başla <i class="fas fa-arrow-right ml-2"></i></a>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-24 bg-gray-200 text-center fade-in">
+    <h2 class="text-4xl font-bold mb-6">İletişime Geç</h2>
+    <p class="text-gray-700 mb-8">Web siten hakkında soruların varsa hemen bizimle iletişime geç!</p>
+    <form class="max-w-xl mx-auto grid gap-4">
+      <input type="text" placeholder="Adınız" class="p-4 rounded border border-gray-300">
+      <input type="email" placeholder="Email" class="p-4 rounded border border-gray-300">
+      <textarea placeholder="Mesajınız" class="p-4 rounded border border-gray-300"></textarea>
+      <button type="submit" class="bg-green-500 hover:bg-green-700 text-white font-bold py-3 px-6 rounded shadow-lg transition duration-300 transform hover:scale-110">Gönder</button>
+    </form>
   </section>
 
   <!-- Footer -->
   <footer class="bg-gray-900 text-gray-400 py-8 text-center fade-in">
-    © 2025 Caner Teper. Tüm hakları saklıdır.
+    <div>© 2025 Caner Teper. Tüm hakları saklıdır.</div>
+    <div class="mt-4 space-x-4">
+      <a href="#" class="hover:text-white"><i class="fab fa-facebook"></i></a>
+      <a href="#" class="hover:text-white"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="hover:text-white"><i class="fab fa-instagram"></i></a>
+    </div>
   </footer>
 
   <!-- Scroll Animasyon Script -->
